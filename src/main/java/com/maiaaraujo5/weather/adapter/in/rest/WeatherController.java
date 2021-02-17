@@ -23,7 +23,7 @@ public class WeatherController {
     }
 
     @GetMapping()
-    public ResponseEntity<List<Response>> getWeather(@RequestParam String latitude, @RequestParam String longitude) {
+    public ResponseEntity<List<Response>> getWeather(@RequestParam double latitude, @RequestParam double longitude) {
 
         List<Response> response = new ArrayList<>();
 

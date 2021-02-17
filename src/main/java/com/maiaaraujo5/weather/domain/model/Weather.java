@@ -1,13 +1,14 @@
 package com.maiaaraujo5.weather.domain.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Date;
-import java.util.List;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class Weather {
     private Date date;
     private Date sunrise;
@@ -15,6 +16,5 @@ public class Weather {
     private double temperature;
     private double feelsLike;
     private int humidity;
-    private List<WeatherAlerts> weatherAlerts;
 }
 

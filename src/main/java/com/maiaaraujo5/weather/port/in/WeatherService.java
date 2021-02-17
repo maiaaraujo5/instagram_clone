@@ -5,5 +5,5 @@ import com.maiaaraujo5.weather.domain.model.Weather;
 import java.util.List;
 
 public interface WeatherService {
-    List<Weather> getWeather(String latitude, String longitude);
+    List<Weather> getWeather(double latitude, double longitude);
 }
